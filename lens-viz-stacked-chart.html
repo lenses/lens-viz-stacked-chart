@@ -2,7 +2,7 @@
 <link rel="import" href="../th-d3-chart/th-d3-chart.html">
 
 
-<polymer-element name="th-stacked-chart" extends="th-d3-chart">
+<polymer-element name="lens-viz-stacked-chart" extends="th-d3-chart">
 
 	<template>
 	    <core-style ref="theme"></core-style>
@@ -46,7 +46,7 @@
 
 	<script>
 
-		Polymer('th-stacked-chart', {
+		Polymer('lens-viz-stacked-chart', {
 			chartData: [{label: 'medicaid', value: 20, display_value: '', color:'', offset: 0},{label: 'gap', value: 40, display_value: '', color:'', offset: 0},{label: 'sub', value: 0.1, display_value: '', color:'', offset: 5}], 
 		  init: function() {
 		      var self = this;
@@ -340,7 +340,7 @@
 
           getMetaData: function() {
           	return {
-						  "name": "th-stacked-chart",
+						  "name": "lens-viz-stacked-chart",
 						  "description": "Thelma stacked chart",
 						  "category":"chart",
 						  "version": "0.0.1",
